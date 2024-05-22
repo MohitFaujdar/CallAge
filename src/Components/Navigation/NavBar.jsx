@@ -13,7 +13,7 @@ const NavComp = () => {
         window.scrollY > 50 ? setsticky(true) : setsticky(false);
       });
     };
-  }, []);
+  }, [window.scrollY]);
 
   const [mobileMenu, setmobileMenu] = useState(false);
 
